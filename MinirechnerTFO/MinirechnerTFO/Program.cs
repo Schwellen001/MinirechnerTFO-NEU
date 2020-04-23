@@ -20,8 +20,11 @@ namespace MinirechnerTFO
             
 
             int ErgA = Addition(Zahl1, Zahl2);
+            int ErgS = Subtraktion(Zahl1, Zahl2); 
 
             Console.Write("\nAddition: " + ErgA);
+
+            Console.Write("\nSubtraktion: " + ErgS);
 
 
             Console.ReadKey();
@@ -34,6 +37,15 @@ namespace MinirechnerTFO
         public static int Addition(int Zahl1, int Zahl2)
         {
             int Erg = Zahl1 + Zahl2;
+
+            return Erg;
+
+
+        }
+
+        public static int Subtraktion(int Zahl1, int Zahl2)
+        {
+            int Erg = Zahl1 - Zahl2;
 
             return Erg;
 
