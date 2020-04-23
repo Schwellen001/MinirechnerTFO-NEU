@@ -11,17 +11,35 @@ namespace MinirechnerTFO
         {
             Console.WriteLine("Minirechner");
 
-            Console.WriteLine("Zahl1: ");
+            Console.Write("\nZahl1: ");
             int Zahl1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Zahl2: ");
+            Console.Write("Zahl2: ");
             int Zahl2 = Convert.ToInt32(Console.ReadLine());
 
             
 
+            int ErgA = Addition(Zahl1, Zahl2);
+
+            Console.Write("\nAddition: " + ErgA);
+
+
+            Console.ReadKey();
 
 
 
         }
+
+
+        public static int Addition(int Zahl1, int Zahl2)
+        {
+            int Erg = Zahl1 + Zahl2;
+
+            return Erg;
+
+
+        }
+
+
     }
 }
