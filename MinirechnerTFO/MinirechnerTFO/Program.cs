@@ -9,15 +9,15 @@ namespace MinirechnerTFO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Minirechner");
+            Console.WriteLine(" - Minirechner -");
 
-            Console.Write("\nZahl1: ");
+            Console.Write("\nGeben Sie Zahl1 ein: ");
             int Zahl1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Zahl2: ");
+            Console.Write("Geben Sie Zahl2 ein: ");
             int Zahl2 = Convert.ToInt32(Console.ReadLine());
 
-            
+            // Für jede Rechenart wird ein eigenes Ergebnis erstellt:
 
             int ErgA = Addition(Zahl1, Zahl2);
             int ErgS = Subtraktion(Zahl1, Zahl2);
@@ -35,14 +35,13 @@ namespace MinirechnerTFO
             Console.ReadKey();
         }
 
+        // Methoden:
 
         public static int Addition(int Zahl1, int Zahl2)
         {
             int Erg = Zahl1 + Zahl2;
 
             return Erg;
-
-
         }
 
         public static int Subtraktion(int Zahl1, int Zahl2)
@@ -50,8 +49,6 @@ namespace MinirechnerTFO
             int Erg = Zahl1 - Zahl2;
 
             return Erg;
-
-
         }
 
         public static int Multiplikation(int Zahl1, int Zahl2)
@@ -59,8 +56,6 @@ namespace MinirechnerTFO
             int Erg = Zahl1 * Zahl2;
 
             return Erg;
-
-
         }
 
         public static int Division(int Zahl1, int Zahl2)
@@ -68,10 +63,6 @@ namespace MinirechnerTFO
             int Erg = Zahl1 / Zahl2;
 
             return Erg;
-
-
         } // Ende der Methoden
-
-
     }
 }
