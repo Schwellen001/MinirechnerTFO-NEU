@@ -22,6 +22,7 @@ namespace MinirechnerTFO
             int ErgA = Addition(Zahl1, Zahl2);
             int ErgS = Subtraktion(Zahl1, Zahl2);
             int ErgM = Multiplikation(Zahl1, Zahl2);
+            int ErgD = Division(Zahl1, Zahl2);
 
             Console.Write("\nAddition: " + ErgA);
 
@@ -29,11 +30,9 @@ namespace MinirechnerTFO
 
             Console.Write("\nMultiplikation: " + ErgM);
 
+            Console.Write("\nDivision: " + ErgD);
 
             Console.ReadKey();
-
-
-
         }
 
 
@@ -63,6 +62,15 @@ namespace MinirechnerTFO
 
 
         }
+
+        public static int Division(int Zahl1, int Zahl2)
+        {
+            int Erg = Zahl1 / Zahl2;
+
+            return Erg;
+
+
+        } // Ende der Methoden
 
 
     }
